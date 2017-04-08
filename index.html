@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Students</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type = "text/template" id = "studentTemplate">     
+              <li class="student-item cf">
+                                        <div class="student-details">
+                                            <img class="avatar" src="{studentsAvatarUrl}" >
+                                            <h3>{studentsLogin}</h3>
+                                            <span class="url"> {studentsHtmlUrl} </span> 
+                                        </div>
+                                               <p class="id"> id: {studentsId}</p>
+                                  </li>
+
+     
+    </script>
+  </head>
+
+  <body>
+    <div class="page" id = "page">
+      <div class="page-header cf">
+        <div class="student-search"><input type="text" placeholder="Type to search for students..."   oninput="searchSTUD();"><button id="searchBtn" onclick="" > Reset</button></div>
+        <h2>Students</h2>
+      </div>
+      <ul class="student-list" id="student_list">
+  
+      </ul> 
+      <div id="listingTable"></div>
+
+      <div class="pagination">
+         <ul class="pagination-list">
+             <a href="javascript:prevPage()" id="btn_prev">Prev</a>
+            <a href="javascript:nextPage()" id="btn_next">Next</a>
+            page: <span id="pagini"></span>
+         </ul>
+        
+      </div>
+      
+    </div>
+    <script src="js/student_list.js";></script>
+    <script src="js/script.js";></script>
+  </body>
+</html>
+

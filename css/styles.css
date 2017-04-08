@@ -1,0 +1,93 @@
+body {
+  /*text-align: center;*/
+ 
+}
+body{
+  background-color: #36b55c;
+  color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+.page{  
+    width: 80%;
+    background: white;
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 5PX;
+}
+
+.page-header{
+      border-bottom: 2px solid black;
+}
+
+h2 , student-search{
+  display: inline-block;
+}
+
+.student-search{
+  float: right;
+}
+.student-search > button {
+    background: #36b55c;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    color: #fff;
+}
+.student-search > input {
+    padding: 8px;
+    border-color: #eee;
+  
+}
+
+ul.student-list{
+  list-style-type: none;
+}
+
+.student-item  {
+    border-bottom: 1px solid red;
+    margin: 1em 0 ;
+  }
+
+.student-details, .student-details h3, .joined-details {
+   display: inline-block;
+}
+
+
+
+.student-details > img {
+    width: 50px;
+}
+
+.joined-details {
+  float: right;
+}
+
+
+ul.pagination-list{
+  text-align: center;
+  margin: 0 auto;
+}
+ul.pagination-list > li{
+  display: inline;
+  margin:5px;
+  border: 1px solid #000;
+}
+
+ul.pagination-list > li > a{
+  padding: 10px;
+}
+
+
+ul.pagination-list a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination-list a:hover:not(.active) {background-color: #ddd;}
+
+
+#studList{  background: red;     height: 20px;
+ }    
+
+
